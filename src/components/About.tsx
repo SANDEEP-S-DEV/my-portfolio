@@ -53,7 +53,7 @@ export default function About() {
                 <div className="absolute -inset-1 bg-linear-to-r from-primary to-purple-600 rounded-2xl blur-sm opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
                 <div className="rounded-2xl overflow-hidden border border-white/10 bg-black/40">
                   <img
-                    src="public/sandeep.png"
+                    src="./sandeep.png"
                     alt="Sandeep Surendran"
                     className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
                   />
