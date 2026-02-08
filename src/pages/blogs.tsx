@@ -47,7 +47,7 @@ export default function BlogsPage() {
               </Link>
               
               <nav className="flex items-center gap-2 text-xs font-medium text-white/30">
-                <Link href="/" className="hover:text-white transition-colors flex items-center gap-1">
+                <Link href="" className="hover:text-white transition-colors flex items-center gap-1">
                   <HomeIcon className="w-3 h-3" /> Home
                 </Link>
                 <ChevronRightIcon className="w-3 h-3" />
