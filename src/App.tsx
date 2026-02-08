@@ -9,6 +9,7 @@ import BlogDetailPage from "@/pages/blog-detail";
 import NotFound from "@/pages/not-found";
 
 function Router() {
+  const [location, navigate] = useHashLocation(); 
   return (
     <Switch>
       <Route path="/" component={Home} />
