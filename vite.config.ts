@@ -6,6 +6,8 @@ import runtimeErrorOverlay from "@replit/vite-plugin-runtime-error-modal";
 import { metaImagesPlugin } from "./vite-plugin-meta-images";
 
 export default defineConfig({
+  // *** ADDED: Required for GitHub Pages deployment ***
+  base: '/my-portfolio/', // Replace 'my-portfolio' with your exact GitHub repository name
   plugins: [
     react(),
     runtimeErrorOverlay(),
@@ -25,9 +27,10 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-      "@": path.resolve(import.meta.dirname, "client", "src"),
-      "@shared": path.resolve(import.meta.dirname, "shared"),
-      "@assets": path.resolve(import.meta.dirname, "attached_assets"),
+      // *** FIXED: Now points to /src in the root ***
+      "@": path.resolve(import.meta.dirname, "src"),
+      "@shared": path.resolve(import.meta.dirname, "shared"), // Assuming 'shared' is in the root
+      "@assets": path.resolve(import.meta.dirname, "attached_assets"), // Assuming 'attached_assets' is in the root
     },
   },
   css: {
@@ -35,9 +38,11 @@ export default defineConfig({
       plugins: [],
     },
   },
-  root: path.resolve(import.meta.dirname, "client"),
+  // *** FIXED: Root is the base directory ***
+  root: path.resolve(import.meta.dirname), 
   build: {
-    outDir: path.resolve(import.meta.dirname, "dist/public"),
+    // *** FIXED: Output goes to the standard 'dist' folder ***
+    outDir: path.resolve(import.meta.dirname, "dist"),
     emptyOutDir: true,
   },
   server: {
