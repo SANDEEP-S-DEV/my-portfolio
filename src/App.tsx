@@ -17,7 +17,7 @@ function Router() {
       <Route path="/" component={Home} />
       <Route path="/blogs" component={BlogsPage} />
       <Route path="/blogs/:id" component={BlogDetailPage} />
-      <Route component={NotFound} />
+      <Route component={Home} />
     </Switch>
   );
 }
