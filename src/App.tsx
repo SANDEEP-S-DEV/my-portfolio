@@ -7,7 +7,7 @@ import Home from "@/pages/home";
 import BlogsPage from "@/pages/blogs";
 import BlogDetailPage from "@/pages/blog-detail";
 import NotFound from "@/pages/not-found";
-import { Switch, Route, useHashLocation } from "wouter"; 
+import { useHashLocation } from "wouter/use-hash-location"; 
 
 
 function Router() {
