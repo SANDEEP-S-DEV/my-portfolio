@@ -9,7 +9,7 @@ export default function Hero() {
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-linear-to-b from-black/30 via-black/60 to-background z-10" />
         <img 
-          src="/hero-bg.png" 
+          src="./hero-bg.png" 
           alt="AI Background" 
           className="w-full h-full object-cover opacity-60"
         />
